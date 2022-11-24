@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import {} from 'express-async-errors';
+import 'express-async-errors';
 import * as userRepository from '../data/auth.js';
 
 const jwtSecretKey = '56SQtlwTi$d#4619ca#Q5l*YLbkRjf';
