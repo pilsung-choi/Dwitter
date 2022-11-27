@@ -68,3 +68,4 @@ export async function update(id, text) {
 export async function remove(id) {
   return tweets.filter((tweet) => tweet.id !== id);
 }
+console.log('check');
