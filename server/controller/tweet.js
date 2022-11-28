@@ -4,7 +4,7 @@ import { getSocketIO } from '../connection/socket.js';
 export async function getTweets(req, res) {
   const { username } = req.query;
   const data = await (username
-    ? tweetRepository.getByUsername(username)
+    ? tweetRepository.getAllByUsername(username)
     : tweetRepository.getAll());
   res.status(200).json(data);
 }
