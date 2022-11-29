@@ -1,18 +1,4 @@
 import * as userRepository from './auth.js';
-let tweets = [
-  {
-    id: '1',
-    text: 'hello',
-    createdAt: new Date().toString(),
-    userId: '1',
-  },
-  {
-    id: '2',
-    text: 'hello coder',
-    createdAt: new Date().toString(),
-    userId: '1',
-  },
-];
 
 export async function getAll() {
   return Promise.all(
